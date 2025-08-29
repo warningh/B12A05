@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Emergency Service Directory</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="nav">
+  <div class="nav-wrap">
+    <div class="brand">
+      <div class="logo">
+        <img src="/assets/logo-dark.png" alt="">
+      </div>
+      <div class="title" style="color: green;">Emergency <br> Service</div>
+    </div>
+    <div class="nav-right">
+      <div class="pill heart"><img class="h33" src="/assets/heart.png" alt=""> <span id="heartCount">0</span></div>
+      <div class="pill coin"> <img class="h33" src="/assets/coin.png" alt=""> <span id="coinCount">100</span></div>
+      <div class="pill copy">🗐 <span id="copyCount">0</span></div>
+    </div>
+  </div>
+</header>
+
+<!-- banner text -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="crest">
+      <img src="/assets/logo.png" alt="">
+    </div>
+    <h1>Emergency Service Directory</h1>
+    <p>Government Emergency Services at your Fingertips — A Project by the Government of the People’s Republic of Bangladesh</p>
+  </div>
+</section>
+
+<!-- all section -->
+<main class="main">
+  <!-- CARDS -->
+  <section>
+    <div id="cards" class="grid"></div>
+  </section>
+
+  <!-- Call history -->
+  <aside class="history">
+    <div class="history-head">
+      <div class="history-title">Call History</div>
+      <button class="clear-btn" id="clearHistoryBtn">Clear</button>
+    </div>
+    <div id="historyList" class="list">
+      <div class="empty" id="historyEmpty">No calls yet.</div>
+    </div>
+  </aside>
+</main>
+
+<script src="index.js"></script>
+</body>
+</html>
